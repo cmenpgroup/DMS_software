@@ -19,19 +19,19 @@ The analysis software for the neutron analysis is in the DMS_software/NeutronAna
 - *FilterStatsDMS.R* : reads in a list of raw binary data files, filters out different information, and writes the information to text files in DMS_software/DMS Stats.  The filtered files rows for each event and columns of the information like ADC values, x and y information, etc.
 - *AnalyzeFe55.R* : reads in filtered data for Fe55 calibration runs (*Fe55-stats.dat), plots the ADC spectrum, asks the user to select limits for a gaussian fit, and prints out the fit information.  The scripts loops over a list of filtered files, analyzes them on at a time, and makes a plot of the calibration results vs run number.
 - *AnalyzeNeutron.R* : analysis code for the neutron data.  It will
-    1) Analyze the neutron data files.  Sets the variable dataType = “neut”.
-    2) Runs the script PlotNeutron.R.
-      a) Run the script FileList.R to create a list of the file names.
-      b) Loop over each file in the list.
-      c) Run the script LoadStats.R to read in the data from the -stats.dat file.
-      d) Fill lists for each variable (column in the file).
-      e) Apply cuts to the adc data.
-      f) Create a histogram for the adc data.
-    3) Analyze the background data files. Sets the variable dataType = “back”.
-    4) Runs the script PlotNeutron.R.  Same procedure as in Step 2.
-    5) Create a background subtracted histogram by subtracting the background ADC spectrum from the neutron ADC spectrum.
-    6) Plot the neutron ADC spectrum with overlaying the background ADC spectrum and the neutron minus background ADC spectrum.  
-    7) Save the plot to a file.
+    1. Analyze the neutron data files.  Sets the variable dataType = “neut”.
+    2. Runs the script PlotNeutron.R.
+      a. Run the script FileList.R to create a list of the file names.
+      b. Loop over each file in the list.
+      c. Run the script LoadStats.R to read in the data from the -stats.dat file.
+      d. Fill lists for each variable (column in the file).
+      e. Apply cuts to the adc data.
+      f. Create a histogram for the adc data.
+    3. Analyze the background data files. Sets the variable dataType = “back”.
+    4. Runs the script PlotNeutron.R.  Same procedure as in Step 2.
+    5. Create a background subtracted histogram by subtracting the background ADC spectrum from the neutron ADC spectrum.
+    6. Plot the neutron ADC spectrum with overlaying the background ADC spectrum and the neutron minus background ADC spectrum.  
+    7. Save the plot to a file.
 - *PlotNeutron.R* : create a plot of ADC channel for neutron and background data
 - *FileList.R* : create a list of file names.  It fills the list by using a pattern search on the dataType (Fe55, neut, or back).  It will remove bad files from the list.  
 
