@@ -1,6 +1,7 @@
 # DMS_software
 R scripts for analyzing the Oxy GEM measurements.  The GEM is a gas electron multiplier from CERN.  
 
+# Original DMS Software
 The original software from Dr. Daniel Snowden-Ifft is in the main directory of DMS_software.  Here are descriptions of some original scripts:
 - VMM_ACQ_v5.R : main analysis code.  It can analyze many files of the types Fe-55, neutron, and muon.  The neutron section is incomplete.
 - measurement.r : contains many useful mathematical functions especially error analysis.
@@ -9,9 +10,11 @@ The original software from Dr. Daniel Snowden-Ifft is in the main directory of D
 - GetFe55GasGain.R : determines the GEM gas gain from fitting the ADC spectrum from Fe55 calibration runs.
 - GetHeader1.2.R : extracts file information.  
 
+## Files Added to DMS_software
 Files added to the DMS_software directory by Dr. Michael Wood
-- SetUpPathDMS.R : script to be executed at the start of an analysis.  It sets up paths for the DMS_software directory as the working directory (as variable program.root), the raw binary data directory DMS_software/DMS Data (as variable data.root), the plots directory DMS_software/DMS Plots (as the variable plot.root), the filtered data diredctory DMS_software/DMS Stats (as varible stats.root), and the neutron analysis directory DMS_software/NeutronAnalysis (as variable neutron.root).
+- *SetUpPathDMS.R* : script to be executed at the start of an analysis.  It sets up paths for the DMS_software directory as the working directory (as variable program.root), the raw binary data directory DMS_software/DMS Data (as variable data.root), the plots directory DMS_software/DMS Plots (as the variable plot.root), the filtered data diredctory DMS_software/DMS Stats (as varible stats.root), and the neutron analysis directory DMS_software/NeutronAnalysis (as variable neutron.root).
 
+# Neutron Analysis
 The analysis software for the neutron analysis is in the DMS_software/NeutronAnalysis directory.  It contains the following scripts.
 - FilterStatsDMS.R : reads in a list of raw binary data files, filters out different information, and writes the information to text files in DMS_software/DMS Stats.  The filtered files rows for each event and columns of the information like ADC values, x and y information, etc.
 - AnalyzeFe55.R : reads in filtered data for Fe55 calibration runs (*Fe55-stats.dat), plots the ADC spectrum, asks the user to select limits for a gaussian fit, and prints out the fit information.  The scripts loops over a list of filtered files, analyzes them on at a time, and makes a plot of the calibration results vs run number.
