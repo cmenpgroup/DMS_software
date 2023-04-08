@@ -21,12 +21,12 @@ The analysis software for the neutron analysis is in the DMS_software/NeutronAna
 - *AnalyzeNeutron.R* : analysis code for the neutron data.  It will
     1. Analyze the neutron data files.  Sets the variable dataType = “neut”.
     2. Runs the script PlotNeutron.R.
-      a. Run the script FileList.R to create a list of the file names.
-      b. Loop over each file in the list.
-      c. Run the script LoadStats.R to read in the data from the -stats.dat file.
-      d. Fill lists for each variable (column in the file).
-      e. Apply cuts to the adc data.
-      f. Create a histogram for the adc data.
+        a. Run the script FileList.R to create a list of the file names.
+        b. Loop over each file in the list.
+        c. Run the script LoadStats.R to read in the data from the -stats.dat file.
+        d. Fill lists for each variable (column in the file).
+        e. Apply cuts to the adc data.
+        f. Create a histogram for the adc data.
     3. Analyze the background data files. Sets the variable dataType = “back”.
     4. Runs the script PlotNeutron.R.  Same procedure as in Step 2.
     5. Create a background subtracted histogram by subtracting the background ADC spectrum from the neutron ADC spectrum.
