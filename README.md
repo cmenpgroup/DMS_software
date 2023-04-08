@@ -12,7 +12,7 @@ The original software from Dr. Daniel Snowden-Ifft is in the main directory of D
 
 ## Files Added to DMS_software
 Files added to the DMS_software directory by Dr. Michael Wood
-- *SetUpPathDMS.R* : script to be executed at the start of an analysis.  It sets up paths for the DMS_software directory as the working directory (as variable program.root), the raw binary data directory DMS_software/DMS Data (as variable data.root), the plots directory DMS_software/DMS Plots (as the variable plot.root), the filtered data diredctory DMS_software/DMS Stats (as varible stats.root), and the neutron analysis directory DMS_software/NeutronAnalysis (as variable neutron.root).
+- *SetUpPathDMS.R* : script to be executed at the start of an analysis.  It sets up paths for the DMS_software directory as the working directory (as variable program.root), the raw binary data directory DMS_software/DMS_Data (as variable data.root), the plots directory DMS_software/DMS_Plots (as the variable plot.root), the filtered data diredctory DMS_software/DMS_Stats (as varible stats.root), and the neutron analysis directory DMS_software/NeutronAnalysis (as variable neutron.root).
 
 # Neutron Analysis
 The analysis software for the neutron analysis is in the DMS_software/NeutronAnalysis directory.  It contains the following scripts.
