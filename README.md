@@ -41,3 +41,10 @@ Currently, the *SetUpPathDMS.R* file is run by a few of the scripts in the DMS_s
 
 The "PathIsSet" variable is set as TRUE in SetUpPathDMS.R.  The if statement with the exists() function is used to check if it has been set.  If it has not, then SetUpPathDMS.R is executed.  Since this script may be called by many different scripts in the chain, the conditional ensures that it is only called once. 
 
+# The DMS Directories
+The input and output files are stored in the following directories:
+- [DMS_Data](https://drive.google.com/drive/folders/1UbzbLKKBaz4H-dXJIN7nqks3SpvhhE-N?usp=share_link) : the raw binary data files.
+- *DMS_Stats* : the filtered text files.
+- *DMS_Plots* : the output files of the many plots created during the analysis.
+
+These directories should be created in the DMS_software directory before any anlaysis can be run.  In order to save space, the input and output files are not saved in this github repository.  They are stored in this Google Drive. See the links above.
