@@ -44,7 +44,7 @@ The "PathIsSet" variable is set as TRUE in SetUpPathDMS.R.  The if statement wit
 # The DMS Directories
 The input and output files are stored in the following directories:
 - [DMS_Data](https://drive.google.com/drive/folders/1UbzbLKKBaz4H-dXJIN7nqks3SpvhhE-N?usp=share_link) : the raw binary data files.
-- *DMS_Stats* : the filtered text files.
-- *DMS_Plots* : the output files of the many plots created during the analysis.
+- [DMS_Stats](https://drive.google.com/drive/folders/1C42IAJ0IeSF8x080lACzAZNZEwANtsKX?usp=share_link) : the filtered text files.
+- [DMS_Plots](https://drive.google.com/drive/folders/1aAMujOIlbvUMI8fUzTJQuAQxqMxogr_b?usp=share_link) : the output files of the many plots created during the analysis.
 
 These directories should be created in the DMS_software directory before any anlaysis can be run.  In order to save space, the input and output files are not saved in this github repository.  They are stored in this Google Drive. See the links above.
