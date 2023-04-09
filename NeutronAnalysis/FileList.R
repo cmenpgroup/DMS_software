@@ -7,7 +7,6 @@ source( paste0(program.root,"/measurement.r" ))
 wire.spacing <- 0.16 # cm
 drift.length <- 1.55 # cm
 
-dataType <- "back"
 filenames <- list.files(paste0(data.root, "/"),pattern= paste0(dataType,".dat"))
 
 badFiles <- NULL
